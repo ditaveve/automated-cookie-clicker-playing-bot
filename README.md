@@ -18,10 +18,10 @@ python3 main.py
 
 ## Changing how long it runs before stopping
 
-By default, the bot clicks for **15 seconds** before stopping itself. This is controlled by the number in [main.py](main.py):
+By default, the bot clicks for **300 seconds** before stopping itself. This is controlled by the number in [main.py](main.py):
 
 ```python
-if time.time() - OG_TIME >= 15:
+if time.time() - OG_TIME >= 300:
     print(f"Cookies/Second:{run_game.get_score()}")
     run_game.stop()
     break
