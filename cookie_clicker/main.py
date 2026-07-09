@@ -13,7 +13,7 @@ while True:
         last_check_time = time.time()
         if run_game.check_upgrade_availability():
             run_game.buy_upgrade()
-    if time.time() - OG_TIME >= 15:
+    if time.time() - OG_TIME >= 300:
         print(f"Cookies/Second:{run_game.get_score()}")
         run_game.stop()
         break
